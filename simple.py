@@ -50,4 +50,30 @@ import matplotlib.pyplot as plt
 ###			   for our satellite is. The full length of time it takes for our satellite to make one orbit around the Earth
 ###			   will be displayed on the graph.
 
+### Newton's Law of Universal Gravitation: Basically the force that two entities extert on each other in terms of gravitational
+###										   pull can be solved using the following equation:
+###
+###										   		Fg = G * ((m1 * m2) / r^2)
+###													
+###													Fg = Gravitational Force
+###													G = Universal Gravitational Constant (6.6743 × 10-11 m^3 kg^-1 s^-2)
+###													m1 = mass of object 1
+###													m2 = mass of object 2
+###													r = seperation between the two objects
+###										   
+###										 This equation will be used to calculate the forces that our satellite and Earth inclict
+###									     on each other.
+
+
+###Attributes of our satellite (imitating Starlink stats from following website:
+###		https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2019-074D#:~:text=The%20Starlink%20satellites%20feature%20a,use%20krypton%2Dfueled%20Hall%20thrusters.
+### These are magic numbers for the equation, thus they are located at the top for easier changeability
+SAT_MASS = 260 #kilograms
+ORBIT_RADIUS = 550 #kilometers
+
+
+### Values taken from: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html
+EARTH_RADIUS = 6378.137 #kilometers
+EARTH_MASS = 5.9722e24 #kilograms
+UNIVERSAL_GRAVITATIONAL_CONSTANT = 6.6743e-11 #m^3 kg^-1 s^-2
 
